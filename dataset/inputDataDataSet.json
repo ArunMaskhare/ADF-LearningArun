@@ -1,0 +1,25 @@
+{
+	"name": "inputDataDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkservice_storagelearningarun",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "orders.csv",
+				"folderPath": "input",
+				"container": "arunlearning"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

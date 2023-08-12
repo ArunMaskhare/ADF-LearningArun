@@ -1,0 +1,25 @@
+{
+	"name": "outputDataDataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkservice_storagelearningarun",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "OutputData.csv",
+				"folderPath": "output",
+				"container": "arunlearning"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": ""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
