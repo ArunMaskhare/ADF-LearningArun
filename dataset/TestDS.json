@@ -1,0 +1,19 @@
+{
+	"name": "TestDS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkservice_storagelearningarun",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "orders.csv",
+				"folderPath": "input",
+				"container": "arunlearning"
+			}
+		}
+	}
+}
